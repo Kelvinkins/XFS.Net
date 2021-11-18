@@ -20,10 +20,12 @@ namespace TestForm
         private PIN pin = new PIN();
         private CDM cdm = new CDM();
         private SIU siu = new SIU();
+
         public Form1()
         {
            int p= XFSUtil.ParseVersionString("3.16", "3.20");
             string s = p.ToString("X");
+
             InitializeComponent();
             Controls.Add(device);
             device.RegisterComplete += Device_RegisterComplete;

@@ -41,6 +41,8 @@ namespace XFSNet.CDM
             if (hResult != XFSDefinition.WFS_SUCCESS)
                 OnPresetError(hResult);
         }
+
+
         protected override void OnExecuteComplete(ref WFSRESULT result)
         {
             switch (result.dwCommandCodeOrEventID)
